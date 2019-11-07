@@ -1,0 +1,10 @@
+section {
+    padding: 100px;
+    text-align: center;
+}
+
+p {
+    padding: 50px;
+    font-size: 44px;
+    color: red;
+}
