@@ -5,7 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './admin-files.component.html',
   styleUrls: ['./admin-files.component.css']
 })
+
 export class AdminFilesComponent implements OnInit {
+  
   menu = [{
     title: '通用设置',
     children: [
@@ -34,6 +36,7 @@ export class AdminFilesComponent implements OnInit {
         {title: '<debug></debug>'}
     ]
   }];
+
   constructor() { }
 
   ngOnInit() {
