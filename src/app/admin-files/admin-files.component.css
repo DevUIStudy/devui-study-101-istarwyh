@@ -22,7 +22,7 @@
     height: calc(100% - 40px);
     background: white;
 }
-
+/* 穿透文字效果 */
 :host ::ng-deep .devui-accordion-menu {
     box-shadow: none;
 }

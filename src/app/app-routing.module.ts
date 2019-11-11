@@ -7,6 +7,7 @@ import{ PageNotFoundComponent } from './page-not-found/page-not-found.component'
 const routes: Routes = [
   {
     path: 'admin', component: AdminFilesComponent,
+    // children代表是admin的子项,即如果找到admin-files应该怎么样
     children: [
       { path: 'files', component: AdminFilesComponent },
     ]
