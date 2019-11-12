@@ -19,11 +19,11 @@ export class AdminFilesComponent implements OnInit {
     title: '项目管理',
     children: [
       {title: '项目设置模版'},
-      {title: '子内容2'},
-      {title: '子内容3'},
+      {title: '设置项目创建者'},
+      {title: '项目和成员管路'},
     ]
   }, {
-    title: '内容三（默认展开）',
+    title: '编译构建',
     open: true,
     children: [
       {title: '子内容1(禁用)', disabled: true},
@@ -31,9 +31,11 @@ export class AdminFilesComponent implements OnInit {
       {title: '子内容3'},
     ]
   }, {
-    title: '内容四（没有子项）' ,
+    title: '私有依赖库' ,
     children: [
-        {title: '<debug></debug>'}
+      {title: '子内容2(默认激活)', active: true},
+      {title: '子内容1(禁用)', disabled: true},
+      {title: '子内容3'},
     ]
   }];
 
