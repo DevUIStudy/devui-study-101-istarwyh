@@ -1,3 +1,10 @@
-<p>
-  admin-files-chart works!
-</p>
+<div>
+  <div class="top-bar">
+    <d-search
+      <!-- style="width:200px" -->
+      [placeholder]="请输入关键词,按Enter键搜索"
+      [size]="'sm'"
+      (searchFn)="onSearch($event)"
+    ></d-search>
+  </div>
+</div>
