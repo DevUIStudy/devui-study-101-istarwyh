@@ -15,6 +15,22 @@
     line-height: 40px;
     font-size: 18px;
 }
+.header d-tabs {
+    position: relative;
+    display:inline-block;
+    margin-left:135px;
+    margin-top:1px;
+    line-height: 32px;
+    /* 设置了这个,底下的才能穿透,未知原因 */
+    z-index: 1;
+}
+:host ::ng-deep .header .nav-tabs a,
+:host ::ng-deep .header .nav-tabs li,
+:host ::ng-deep .header .nav-tabs li .active,
+:host ::ng-deep .devui-accordion-menu {
+    color:red;
+    border-bottom-color:red;
+}
 
 .menu-container {
     float: left;
