@@ -7,4 +7,53 @@
       (searchFn)="onSearch($event)"
     ></d-search>
   </div>
+
+  <div class="chart">
+      <d-data-table
+      [dataSource]="basicDataSource"
+      [field]="colOption.field"
+      header="colOption.header"
+      [fieldType]="colOption.fieldType"
+      [width]="150px"
+    >
+      <d-column field="$index" header="#" [width]="'50px'"></d-column>
+      <d-column
+        field="firstName"
+        header="First Name"
+        [sortable]="true"
+        [width]="'150px'"
+        [filterable]="true"
+        [filterList]="filterListMulti"
+        [beforeFilter]="beforeFilter"
+        (filterChange)="filterChangeMultiple($event)"
+      ></d-column>
+      <d-column
+        field="lastName"
+        header="Last Name"
+        [sortable]="true"
+        [width]="'150px'"
+      ></d-column>
+      <d-column
+        field="gender"
+        header="Gender"
+        [sortable]="true"
+        [width]="'100px'"
+        [filterable]="true"
+        [filterMultiple]="false"
+        [filterList]="filterList2"
+        (filterChange)="filterChangeRadio($event)"
+      ></d-column>
+      <d-column
+        field="dob"
+        header="Date of birth"
+        [fieldType]="'date'"
+        [extraOptions]="{ dateFormat: 'MM/DD/YYYY' }"
+        [width]="'100px'"
+      ></d-column>
+      <d-column field="hidden" header="hidden" [width]="'100px'">hidden</d-column>
+    </d-data-table>
+    <p style="margin-top: 20px">Current Sort parameters:</p>
+    <pre>{{ sortedColumn | json }}</pre>
+    
+  </div>
 </div>

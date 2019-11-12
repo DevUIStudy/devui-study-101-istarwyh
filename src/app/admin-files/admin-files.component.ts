@@ -23,7 +23,7 @@ export class AdminFilesComponent implements OnInit {
     children: [
       {title: '项目设置模版'},
       {title: '设置项目创建者'},
-      {title: '项目和成员管路'},
+      {title: '项目和成员管理'},
     ]
   }, {
     title: '编译构建',
