@@ -2,10 +2,13 @@
 
     <div class="header">  
       <h1>
-        <a href="https://devcloud.huaweicloud.com/" target="_blank" rel="noopener noreferrer"><img alt="DevCloud Logo" src="../../assets/pictures/devcloud-logo.svg" width="76" style="max-width:90%;"></a>
+      <a href="https://devcloud.huaweicloud.com/" target="_blank" rel="noopener noreferrer"><img alt="DevCloud Logo" src="../../assets/pictures/devcloud-logo.svg" width="76" style="max-width:90%;"></a>
       <d-tabs [(activeTab)]="tab22acticeID" [showContent]="false">
         <d-tab id="tab1" title="首页" tabId="tab1"> </d-tab>
       </d-tabs>
+      <div class="greeting">
+        <span>Hi {{username}}</span>
+      </div>
     </h1>
 
     </div>
