@@ -71,7 +71,11 @@
     width: calc(100% - 240px);
     height: calc(100% - 50px);
     margin: 10px 20px;
-    padding-top:20px;
+    padding-top:10px;
     padding-left:20px;
     background: white;
 }
+.space {
+    width: 100%;
+    height: 30px;
+  }
