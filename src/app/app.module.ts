@@ -7,20 +7,22 @@ import { AppComponent } from './app.component';
 import {DevUIModule} from 'ng-devui';
 import { AdminFilesComponent } from './admin-files/admin-files.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AdminFilesChartComponent } from './admin-files-chart/admin-files-chart.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PageNotFoundComponent,
-    AdminFilesComponent
-  ],
-  imports: [
-    BrowserModule,
-    DevUIModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+   declarations: [
+      AppComponent,
+      PageNotFoundComponent,
+      AdminFilesComponent,
+      AdminFilesChartComponent
+   ],
+   imports: [
+      BrowserModule,
+      DevUIModule,
+      AppRoutingModule,
+      BrowserAnimationsModule
+   ],
+   providers: [],
+   bootstrap: [AppComponent]
 })
 export class AppModule { }
