@@ -9,12 +9,13 @@ d-search {
 }.icon {
   display : inline;
   position: relative;
-  margin:0px 5px 0 10px;
+  margin:0px 5px 0px 10px;
   line-height:14px;
 }
 .right{
   float: right;
   height: 30px;
+  margin-right:25px;
 }
 span{
   font-size:12px;

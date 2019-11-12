@@ -45,10 +45,12 @@
     background: white;
 }
 /* 穿透文字效果 */
-:host ::ng-deep .devui-accordion-menu {
+/* :host ::ng-deep .devui-accordion-menu {
     box-shadow: none;
 }
-
+body :host ::ng-deep .tab-content{
+    margin-top:12px;
+} */
 .option {
     line-height: 20px;
     vertical-align: middle;
