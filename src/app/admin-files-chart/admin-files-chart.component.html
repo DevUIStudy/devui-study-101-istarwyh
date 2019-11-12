@@ -13,6 +13,7 @@
       #datatable
       [dataSource]="basicDataSource"
       [scrollable]="true"
+      [checkable]= "true"
       [type]="'striped'"
     >
       <d-column
@@ -27,7 +28,23 @@
         [width]="'100px'"
         [header]="'操作'"
       >
+        <d-cell>
+            <ng-template let-rowIndex="rowIndex" let-rowItem="rowItem">
+              <div
+                class="icon icon-edit"
+                (click)="editItem(rowIndex, rowItem)"
+              ></div>
+              <div
+                *ngIf="rowIndex !== 0"
+                class="icon icon-delete"
+                (click)="deleteItem(rowIndex, rowItem)"
+              ></div>
+            </ng-template>
+          </d-cell>
       </d-column>
     </d-data-table>
+  </div>
+  <div class="bottom-bar">
+
   </div>
 </div>
