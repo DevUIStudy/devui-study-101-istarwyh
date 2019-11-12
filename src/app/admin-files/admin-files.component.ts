@@ -10,7 +10,7 @@ export class AdminFilesComponent implements OnInit {
   tab22acticeID='tab1'
   username = 'XXX'
   tab1acticeID = 'tab1'
-  tab2acticeID = 'tab2'
+  // tab2acticeID = 'tab2'
   menu = [{
     title: '通用设置',
     children: [
@@ -23,7 +23,7 @@ export class AdminFilesComponent implements OnInit {
     children: [
       {title: '项目设置模版'},
       {title: '设置项目创建者'},
-      {title: '项目和成员管路'},
+      {title: '项目和成员管理'},
     ]
   }, {
     title: '编译构建',
