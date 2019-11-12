@@ -1,10 +1,33 @@
 <div>
   <div class="top-bar">
     <d-search
-      <!-- style="width:200px" -->
-      [placeholder]="请输入关键词,按Enter键搜索"
+      style="width:230px"
+      [placeholder]="'请输入关键词,按Enter键搜索'"
       [size]="'sm'"
       (searchFn)="onSearch($event)"
     ></d-search>
+  </div>
+
+  <div class="chart">
+      <d-data-table
+      #datatable
+      [dataSource]="basicDataSource"
+      [scrollable]="true"
+      [type]="'striped'"
+    >
+      <d-column
+        *ngFor="let colOption of dataTableOptions.columns"
+        [field]="colOption.field"
+        [header]="colOption.header"
+        [fieldType]="colOption.fieldType"
+        [width]="'200px'"
+      >
+      </d-column>
+      <d-column
+        [width]="'100px'"
+        [header]="'操作'"
+      >
+      </d-column>
+    </d-data-table>
   </div>
 </div>
