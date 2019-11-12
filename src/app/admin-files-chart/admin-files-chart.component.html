@@ -1,4 +1,5 @@
 <div>
+
   <div class="top-bar">
     <d-search
       style="width:230px"
@@ -44,7 +45,32 @@
       </d-column>
     </d-data-table>
   </div>
-  <div class="bottom-bar">
 
+  <div class="bottom-bar">
+      <div class="pagination">
+          <d-pagination
+          [total]="pager1.total"
+          [(pageSize)]="pager1.pageSize"
+          [totalItemText]="'总条数'"
+          [(pageIndex)]="pager1.pageIndex"
+          [canViewTotal]="true"
+          [canChangePageSize]="true"
+          [lite]="true"
+          [haveConfigMenu]="true"
+          >
+          <div class="pagination-config-item">
+            <div class="config-item-title">显示字段</div>
+            <div class="config-item-words">点击设置</div>
+          </div>
+          <div class="pagination-config-item">
+            <div class="config-item-title">显示方式</div>
+            <div style="padding-left:10px;margin-top: 4px;">
+              <i class="icon-list-view"></i>
+              <i class="icon-vecIcon-briefcase"></i>
+            </div>
+          </div>
+        </d-pagination>
+       </div> 
   </div>
+
 </div>
