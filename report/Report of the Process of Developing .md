@@ -13,7 +13,6 @@ devui-study-101-istarwyh created by GitHub Classroom
 ## 示例问题
 1. 如果目录和文件到后面才意识到很乱,怎么样才能简单重新编排目录?
 2. `z-index`是什么,为啥加它?
-3. 
 
 ## 对应能找到解决方案的手段 
 1. 定位代码,确认问题位置确认官网源代码
@@ -27,7 +26,6 @@ devui-study-101-istarwyh created by GitHub Classroom
 
 ## 自己踩过的坑
 1. `checkable`代码自动补全成了`checktable`
-
 
 2. 没有仔细看到格式`"''"`
 

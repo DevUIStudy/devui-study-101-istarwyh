@@ -12,7 +12,7 @@ export class AdminFilesChartComponent implements OnInit {
   ngOnInit() {
   }
   
-  onSearch(term){
+  onSearch(term: any){
     console.log(term);
   }
 

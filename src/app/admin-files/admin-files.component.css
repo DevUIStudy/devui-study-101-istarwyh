@@ -6,8 +6,8 @@
 
 .header {
     height: 40px;
-    color: #c0c0c0;
-    background: #232323;
+    /* color: #ffffff; */
+    background: #701b1b;
 }
 
 .header h1 {
@@ -21,7 +21,7 @@
     margin-left:100px;
     margin-top:1px;
     line-height: 32px;
-    /* 设置了这个,底下的才能穿透,未知原因 */
+    /* 设置了这个,底下的才能穿透,层叠层级在上 */
     z-index: 1;
 }
 :host ::ng-deep .header .nav-tabs a,
