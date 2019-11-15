@@ -13,6 +13,7 @@ devui-study-101-istarwyh created by GitHub Classroom
 ## 示例问题
 1. 如果目录和文件到后面才意识到很乱,怎么样才能简单重新编排目录?
 2. `z-index`是什么,为啥加它?
+3. 
 
 ## 对应能找到解决方案的手段 
 1. 定位代码,确认问题位置确认官网源代码
@@ -23,3 +24,11 @@ devui-study-101-istarwyh created by GitHub Classroom
 1. 遇到的问题不多,对于某些问题解决方法不在组件内.只是这些问题的解决也不应依赖devui的指导,或许可以出一个**FAQ**
 
 2. devui可以提供类似angular的上手模拟场景,可以在某些小的关键点参考MDN的web开发实践用引用的方式给出实用的建议与链接.
+
+## 自己踩过的坑
+1. `checkable`代码自动补全成了`checktable`
+
+
+2. 没有仔细看到格式`"''"`
+
+
