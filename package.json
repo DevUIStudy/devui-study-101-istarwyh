@@ -13,7 +13,7 @@
 		"onCommand:extension.helloWorld",
 		"onCommand:extension.showError"
 	],
-	"main": "src/extension",
+	"main": "src/extension.ts",
 	"contributes": {
 		"commands": [
 			{
@@ -24,7 +24,22 @@
 				"command": "extension.showError",
 				"title": "ShowError"
 			}
-		]
+		],
+		"menus": {
+			"editor/context": [
+                {
+                    "when": "editorFocus",
+                    "command": "extension.demo.getCurrentFilePath",
+                    "group": "navigation"
+                }
+            ],
+            "explorer/context": [
+                {
+                    "command": "extension.demo.getCurrentFilePath",
+                    "group": "navigation"
+                }
+            ]
+        }
 	},
 	"scripts": {
 		"test": "node ./test/runTest.js"
