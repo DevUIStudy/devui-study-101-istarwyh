@@ -31,7 +31,7 @@ function activate(context) {
 	});
 	context.subscriptions.push(disposable_1);
 
-	context.subscriptions.push(vscode.commands.registerCommand('extension.demo.getCurrentFilePath', (uri) => {
+	context.subscriptions.push(vscode.commands.registerCommand('extension.getCurrentFilePath', (uri) => {
 		vscode.window.showInformationMessage(`当前文件(夹)路径是：${uri ? uri.path : '空'}`);
 	}));
 	

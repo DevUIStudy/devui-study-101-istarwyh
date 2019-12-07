@@ -11,7 +11,8 @@
 	],
 	"activationEvents": [
 		"onCommand:extension.helloWorld",
-		"onCommand:extension.showError"
+		"onCommand:extension.showError",
+		"onCommand:extension.getCurrentFilePath"
 	],
 	"main": "src/extension.ts",
 	"contributes": {
@@ -23,20 +24,24 @@
 			{
 				"command": "extension.showError",
 				"title": "ShowError"
+			},
+			{
+				"command": "extension.getCurrentFilePath",
+				"title":"The Source?"
 			}
 		],
 		"menus": {
 			"editor/context": [
                 {
                     "when": "editorFocus",
-                    "command": "extension.demo.getCurrentFilePath",
-                    "group": "navigation"
+                    "command": "extension.getCurrentFilePath",
+                    "group": "navigation@5"
                 }
             ],
             "explorer/context": [
                 {
-                    "command": "extension.demo.getCurrentFilePath",
-                    "group": "navigation"
+                    "command": "extension.getCurrentFilePath",
+                    "group": "navigation@5"
                 }
             ]
         }
