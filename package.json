@@ -1,20 +1,25 @@
 {
-	"name": "autodevui",
+	"name": "devui",
 	"displayName": "AutoDevui",
-	"description": "Devui的配套编辑插件",
+	"description": "AI & Devui",
 	"version": "0.0.1",
 	"engines": {
-		"vscode": "^1.40.0"
+		"vscode": "^1.41.0"
 	},
 	"categories": [
 		"Other"
 	],
 	"activationEvents": [
 		"onCommand:extension.helloWorld",
-		"onCommand:extension.showError",
-		"onCommand:extension.getCurrentFilePath"
+		"onCommand:extension.warning",
+		"onCommand:extension.getCurrentFilePath",
+		"onCommand:extension.moveBeginningOfBuffer",
+		"onLanguage:json",
+		"onLanguage:javascript",
+		"onLanguage:typescript",
+		"onLanguage:html"
 	],
-	"main": "src/extension.ts",
+	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
@@ -22,42 +27,56 @@
 				"title": "Hello World"
 			},
 			{
-				"command": "extension.showError",
-				"title": "ShowError"
+				"command": "extension.warning",
+				"title": "Warning"
 			},
 			{
 				"command": "extension.getCurrentFilePath",
-				"title":"The Source?"
+				"title": "当前文件(夹)路径"
+			},
+			{
+				"command": "extension.moveBeginningOfBuffer",
+				"title": "move-beginning-of-buffer"
+			}
+		],
+		"keybindings":[
+			{
+				"command": "extension.moveBeginningOfBuffer",
+				"key": "alt+["
 			}
 		],
 		"menus": {
 			"editor/context": [
-                {
-                    "when": "editorFocus",
-                    "command": "extension.getCurrentFilePath",
-                    "group": "navigation@5"
-                }
-            ],
-            "explorer/context": [
-                {
-                    "command": "extension.getCurrentFilePath",
-                    "group": "navigation@5"
-                }
-            ]
-        }
+				{
+					"when":"editorFocus",
+					"command": "extension.getCurrentFilePath",
+					"group": "navigation@5"
+				}
+			],
+			"explorer/context": [
+				{
+					"command": "extension.getCurrentFilePath",
+					"group": "navigation"
+				}
+			]
+		}
 	},
 	"scripts": {
-		"test": "node ./test/runTest.js"
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
 		"@types/glob": "^7.1.1",
 		"@types/mocha": "^5.2.7",
 		"@types/node": "^12.11.7",
-		"@types/vscode": "^1.40.0",
-		"eslint": "^6.6.0",
+		"@types/vscode": "^1.41.0",
 		"glob": "^7.1.5",
 		"mocha": "^6.2.2",
 		"typescript": "^3.6.4",
+		"tslint": "^5.20.0",
 		"vscode-test": "^1.2.2"
 	}
 }
