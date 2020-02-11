@@ -24,13 +24,13 @@ import Slider from './slider';
 import Status from './status';
 import Sticky from './sticky';
 import Tabs from './tabs';
-import Tags from './tags';
+import Tag from './tags';
 import Toast from './toast';
 import Toggle from './toggle';
 import Tooltip from './tooltip';
-import Tree from './tree';
-import Tr from './tree-select';
-import Ta from './tags-input';
+import Tre from './tree';
+import Tree from './tree-select';
+import Tags from './tags-input';
 import Upload from './upload';
 export default {
     Accordion,
@@ -65,6 +65,6 @@ export default {
     Tooltip,
     Tree,
     Upload,
-    Tr,
-    Ta
+    Tre,
+    Tag
 };
