@@ -61,13 +61,13 @@ exports.default = {
     Status: status_1.default,
     Sticky: sticky_1.default,
     Tabs: tabs_1.default,
-    Tags: tags_input_1.default,
+    Tags: tags_1.default,
     Toast: toast_1.default,
     Toggle: toggle_1.default,
     Tooltip: tooltip_1.default,
-    Tree: tree_select_1.default,
+    Tree: tree_1.default,
     Upload: upload_1.default,
-    Tre: tree_1.default,
-    Tag: tags_1.default
+    TreeSelect: tree_select_1.default,
+    TagsInput: tags_input_1.default
 };
 //# sourceMappingURL=index.js.map
