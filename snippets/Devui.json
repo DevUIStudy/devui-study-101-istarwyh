@@ -1,5 +1,5 @@
 {
-	"main": {
+	"d-dropdown": {
 		"prefix": "d-dropdown",
 		"body": [
             "<section>",
@@ -25,7 +25,6 @@
             "    </ul>",
             "  </div>",
             "</section>"
-            
 		],
 		"description": "dDropDown"
 	} 

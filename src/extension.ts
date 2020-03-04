@@ -3,6 +3,8 @@ import * as move from './move';
 
 export function activate(context: vscode.ExtensionContext) {
 
+
+
 	console.log('恭喜,你的插件已经被激活了!');
 
 	// 跳转到定义
