@@ -39,12 +39,6 @@
 				"title": "move-beginning-of-buffer"
 			}
 		],
-		"snippets": [
-			{
-			  "language": "html",
-			  "path": "./snippets/Devui.json"
-			}
-		  ],
 		"keybindings": [
 			{
 				"command": "extension.moveBeginningOfBuffer",

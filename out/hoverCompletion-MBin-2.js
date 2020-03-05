@@ -5,9 +5,14 @@ const vscode_1 = require("vscode");
 const params_1 = require("./params");
 const completionTriggerChars = [" ", "\n"];
 function provideCompletionItems(document, position) {
-    const start = new vscode_1.Position(0, 0);
-    const range = new vscode_1.Range(start, position);
-    const text = document.getText(range);
+    // const start: Position = new Position(0, 0);
+    // const range: Range = new Range(start, position);
+    // const text = document.getText(range);
+    /* 减少检索范围，仅检索光标所在行 */
+    const line = document.lineAt(position);
+    const text = line.text.substring(0, position.character);
+    /* 检测d+一个字母 */
+    const componentRegex1 = /<(d[a-zA-Z]*)\b[^<>]*$/g;
     // 不匹配import方式引入,因为使用devui的时候这两个不在一个文件当中
     // const importRegex = /import[\s\S]*from\s'@angular\/core'/g;
     //devui的使用以d-开头,如d-button.值得一提的是这个在正则表达式的测试中是null.        
